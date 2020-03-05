@@ -1,0 +1,39 @@
+Package: ldatools
+Title: Utility functions for life-time data analysis
+Version: 0.0.5
+Authors@R: person("Andreas", "Bender", , "andreas.bender@stat.uni-muenchen.de", role = c("aut", "cre"), comment=c(ORCID = "0000-0001-5628-8611"))
+Description: Utility functions for life-time data analysis (LDA).
+Depends:
+    R (>= 3.3.0)
+Imports:
+    ggplot2,
+    survival,
+    eha,
+    pec,
+    checkmate,
+    magrittr,
+    tibble,
+    dplyr,
+    broom,
+    tidyr,
+    purrr,
+    rlang,
+    modelr,
+    pbapply,
+    e1071,
+    rms,
+    prodlim
+Suggests:
+    testthat,
+    KMsurv,
+    MASS,
+    knitr,
+    rmarkdown
+Byte-Compile: yes
+License: MIT + file LICENSE
+LazyData: true
+URL: http://github.com/adibender/ldatools
+BugReports: http://github.com/adibender/ldatools/issues
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+VignetteBuilder: knitr

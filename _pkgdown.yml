@@ -1,0 +1,26 @@
+reference:
+  - title: "Interval information"
+    desc: "Functions that help extract interval-specific summary information."
+    contents:
+      - int_info
+      - split_info
+  - title: "Residuals"
+    desc: "Extract (or plot) residuals from Cox models."
+    contents:
+      - get_coxsnell
+      - gg_coxsnell
+      - get_scaledsch
+      - gg_scaledsch
+  - title: "Plot helpers"
+    desc: "Utility functions for visualizations"
+    contents:
+      - get_terms
+      - geom_stepribbon
+  - title: "Estimation"
+    desc: "Estimation functions for quantaties of time-to-event data"
+    contents:
+      - lifetable
+  - title: "Utility"
+    desc: "Miscelaneous utility functions"
+    contents:
+      - create_formulas

@@ -1,0 +1,18 @@
+language: r
+sudo: false
+cache: packages
+
+r:
+  - devel
+  - release
+
+r_github_packages:
+  - jimhester/covr
+
+# whitelist
+branches:
+  only:
+    - master
+
+after_success:
+  - Rscript -e 'covr::codecov(type="all", line_exclusions="R/zzz.R")'

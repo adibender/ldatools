@@ -1,0 +1,15 @@
+^vignettes/simulations_files$
+^vignettes/simulations_cache$
+^sandbox$
+^\.\./sandbox$
+^.*\.Rproj$
+^\.Rproj\.user$
+
+sandbox/
+README.mdown
+## travis
+.travis.yml
+^LICENSE\.md$
+^docs$
+^appveyor\.yml$
+^_pkgdown\.yml$
