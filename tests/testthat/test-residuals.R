@@ -6,7 +6,7 @@ cox.tongue <- coxph(Surv(time, delta)~type, data=tongue)
 
 test_that("Dimensions and names correct", {
 	expect_equal(length(get_csvec(cox.tongue)), nrow(tongue))
-	expect_data_frame(get_coxsnell(cox.tongue), nrows=57L, ncols=3L)
+	expect_data_frame(get_coxsnell(cox.tongue), nrows=56L, ncols=3L)
 	expect_equal(names(get_coxsnell(cox.tongue)),
 		c("coxsnell", "cumu_hazard", "survival"))
 })
@@ -43,7 +43,7 @@ scaledsch <- get_scaledsch(fit.vet, transform="identity")
 
 test_that("Scaled Schoenfeld residuals obtained correctly", {
 	expect_equal(nrow(scaledsch), nrow(zph.vet$y)*ncol(zph.vet$y))
-	expect_equal(dim(scaledsch), c(1024, 4))
+	expect_equal(dim(scaledsch), c(768, 4))
 	expect_equal(names(scaledsch), c("time", "transform", "variable", "residual"))
 
 })
